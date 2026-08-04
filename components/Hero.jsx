@@ -1,7 +1,7 @@
 'use client'
 import LeadForm from './LeadForm'
 
-const Hero = () => {
+const Hero = ({ setIsOpen }) => {
   return (
     <section
       id="home"
@@ -128,19 +128,21 @@ const Hero = () => {
 
             {/* Buttons */}
             <div className="flex flex-wrap items-center gap-4">
-              <a
-                href="https://wa.me/+918447755103?text=Hi! I'm interested in Smart World Sector 67. Please share the Price List & Floor Plan."
-                className="inline-flex items-center justify-center px-9 py-3.5 rounded-full text-white font-bold text-base transition-all duration-300 hover:scale-105"
+              <button
+                type="button"
+                onClick={() => setIsOpen && setIsOpen(true)}
+                className="inline-flex items-center justify-center px-9 py-3.5 rounded-full text-white font-bold text-base transition-all duration-300 hover:scale-105 cursor-pointer border-none"
                 style={{
                   background: '#0070ff',
                   boxShadow: '0 6px 20px rgba(0, 112, 255, 0.4)',
                 }}
               >
                 Book Site Visit
-              </a>
-              <a
-                href="/images/smartworld.pdf"
-                className="inline-flex items-center justify-center px-9 py-3.5 rounded-full font-bold text-base transition-all duration-300 hover:bg-white hover:text-[#1b2b4b]"
+              </button>
+              <button
+                type="button"
+                onClick={() => setIsOpen && setIsOpen(true)}
+                className="inline-flex items-center justify-center px-9 py-3.5 rounded-full font-bold text-base transition-all duration-300 hover:bg-white hover:text-[#1b2b4b] cursor-pointer"
                 style={{
                   background: 'rgba(15, 20, 30, 0.65)',
                   border: '2px solid rgba(255, 255, 255, 0.85)',
@@ -148,7 +150,7 @@ const Hero = () => {
                 }}
               >
                 Download Brochure
-              </a>
+              </button>
             </div>
           </div>
 

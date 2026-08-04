@@ -64,41 +64,35 @@ const Highlights = ({ setIsOpen }) => {
 
         {/* 4x2 / 2x4 Feature Cards Grid */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 md:gap-7 mb-14">
-          {highlights.map((item, i) => {
-            const num = (i + 1).toString().padStart(2, '0')
-            return (
-              <div
-                key={i}
-                data-aos="fade-up"
-                data-aos-delay={(i * 50).toString()}
-                onClick={() => setIsOpen(true)}
-                className="group relative bg-white rounded-[20px] p-7 border border-[#e2effe] shadow-[0_6px_25px_rgba(0,0,0,0.03)] hover:-translate-y-2 hover:shadow-[0_16px_36px_rgba(13,110,253,0.14)] hover:border-[#0d6efd]/40 transition-all duration-300 cursor-pointer flex flex-col justify-between overflow-hidden"
-              >
-                {/* Top Row: Icon & Number Badge */}
-                <div>
-                  <div className="flex items-center justify-between mb-6">
-                    <div className="w-14 h-14 rounded-[14px] bg-[#edf4ff] text-[#0d6efd] group-hover:bg-[#0d6efd] group-hover:text-white flex items-center justify-center text-[22px] transition-all duration-300 shadow-sm group-hover:scale-105">
-                      <i className={item.icon}></i>
-                    </div>
-                    <span className="text-[#0d6efd]/20 group-hover:text-[#0d6efd]/40 font-black text-[34px] tracking-tight transition-colors duration-300">
-                      {num}
-                    </span>
+          {highlights.map((item, i) => (
+            <div
+              key={i}
+              data-aos="fade-up"
+              data-aos-delay={(i * 50).toString()}
+              onClick={() => setIsOpen(true)}
+              className="group relative bg-white rounded-[20px] p-7 border border-[#e2effe] shadow-[0_6px_25px_rgba(0,0,0,0.03)] hover:-translate-y-2 hover:shadow-[0_16px_36px_rgba(13,110,253,0.14)] hover:border-[#0d6efd]/40 transition-all duration-300 cursor-pointer flex flex-col justify-between overflow-hidden"
+            >
+              <div>
+                {/* Top Row: Icon & Title Side-by-Side */}
+                <div className="flex items-center gap-4 mb-4">
+                  <div className="w-[52px] h-[52px] min-w-[52px] min-h-[52px] rounded-[14px] bg-[#edf4ff] text-[#0d6efd] group-hover:bg-[#0d6efd] group-hover:text-white flex items-center justify-center text-[22px] transition-all duration-300 shadow-sm flex-shrink-0 group-hover:scale-105">
+                    <i className={item.icon}></i>
                   </div>
-
-                  {/* Title & Description */}
-                  <h4 className="text-[#1b2b4b] font-bold text-[18px] mb-2.5 leading-snug group-hover:text-[#0d6efd] transition-colors duration-200">
+                  <h4 className="text-[#1b2b4b] font-bold text-[17px] sm:text-[18px] leading-snug group-hover:text-[#0d6efd] transition-colors duration-200 m-0">
                     {item.title}
                   </h4>
-                  <p className="text-[#6c757d] text-[13.5px] leading-[1.65] m-0">
-                    {item.description}
-                  </p>
                 </div>
 
-                {/* Subtle bottom accent line that expands on hover */}
-                <div className="w-12 h-[3px] bg-[#0d6efd]/20 group-hover:bg-[#0d6efd] group-hover:w-full rounded-full mt-6 transition-all duration-300"></div>
+                {/* Description */}
+                <p className="text-[#6c757d] text-[13.5px] leading-[1.65] m-0">
+                  {item.description}
+                </p>
               </div>
-            )
-          })}
+
+              {/* Subtle bottom accent line that expands on hover */}
+              <div className="w-12 h-[3px] bg-[#0d6efd]/20 group-hover:bg-[#0d6efd] group-hover:w-full rounded-full mt-6 transition-all duration-300"></div>
+            </div>
+          ))}
         </div>
 
         {/* Centered CTA */}

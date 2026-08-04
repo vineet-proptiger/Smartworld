@@ -4,20 +4,20 @@ import Link from 'next/link'
 import { PROJECT_ID, PROJECT_NAME, API_ENDPOINT, SHEET_NAME, SECRET_KEY, CITY_DISPLAY } from '../lib/config'
 import { buildTrackingFields } from '../lib/formMeta'
 
-const F_SANS = 'var(--font-sans), Open Sans, sans-serif'
-const F_JOST = 'var(--font-jost), Montserrat, sans-serif'
+const F_SANS = 'var(--font-poppins), Poppins, sans-serif'
+const F_JOST = 'var(--font-poppins), Poppins, sans-serif'
 
 const fieldStyle = {
   width: '100%',
   background: '#ffffff',
-  border: '1px solid #cccccc',
-  borderRadius: '4px',
-  padding: '12px 14px',
-  color: '#333333',
-  fontSize: '14px',
-  fontFamily: F_SANS,
+  border: '1px solid #d1d5db',
+  borderRadius: '8px',
+  padding: '13px 16px',
+  color: '#212529',
+  fontSize: '14.5px',
+  fontFamily: 'var(--font-poppins), Poppins, sans-serif',
   outline: 'none',
-  caretColor: '#006838',
+  caretColor: '#0070ff',
 }
 
 const EnquireModal = ({ isOpen, setIsOpen }) => {
@@ -104,19 +104,19 @@ const EnquireModal = ({ isOpen, setIsOpen }) => {
   return (
     <div
       className="fixed inset-0 z-[100] flex items-center justify-center p-4"
-      style={{ background: 'rgba(0,0,0,0.72)', backdropFilter: 'blur(4px)' }}
+      style={{ background: 'rgba(0,0,0,0.72)', backdropFilter: 'blur(6px)', fontFamily: 'var(--font-poppins), Poppins, sans-serif' }}
       onClick={() => setIsOpen(false)}
     >
       <div
         style={{
           background: '#ffffff',
           width: '100%',
-          maxWidth: '480px',
-          borderRadius: '4px',
+          maxWidth: '460px',
+          borderRadius: '16px',
           border: 'none',
-          boxShadow: '0 4px 24px rgba(0,0,0,0.15)',
+          boxShadow: '0 20px 50px rgba(0,0,0,0.3)',
           position: 'relative',
-          padding: '36px 28px 28px',
+          padding: '36px 30px 30px',
           maxHeight: '95vh',
           overflowY: 'auto',
           animation: 'slideInRight 0.38s cubic-bezier(0.22,1,0.36,1) forwards',
@@ -127,13 +127,16 @@ const EnquireModal = ({ isOpen, setIsOpen }) => {
         <button
           onClick={() => setIsOpen(false)}
           style={{
-            position: 'absolute', top: '14px', right: '14px',
-            background: 'transparent', border: 'none', cursor: 'pointer',
-            width: '26px', height: '26px',
+            position: 'absolute', top: '16px', right: '18px',
+            background: '#f3f4f6', border: 'none', cursor: 'pointer',
+            width: '32px', height: '32px',
             display: 'flex', alignItems: 'center', justifyContent: 'center',
-            fontSize: '24px', fontWeight: '400', color: '#666',
-            lineHeight: 1, borderRadius: '2px',
+            fontSize: '22px', fontWeight: '700', color: '#4b5563',
+            lineHeight: 1, borderRadius: '50%',
+            transition: 'background 0.2s, color 0.2s',
           }}
+          onMouseEnter={e => { e.currentTarget.style.background = '#0070ff'; e.currentTarget.style.color = '#fff' }}
+          onMouseLeave={e => { e.currentTarget.style.background = '#f3f4f6'; e.currentTarget.style.color = '#4b5563' }}
           aria-label="Close"
         >
           ×
@@ -141,8 +144,8 @@ const EnquireModal = ({ isOpen, setIsOpen }) => {
 
         {/* ── Heading ── */}
         <h2 style={{
-          color: '#333', fontFamily: F_JOST, fontWeight: '700',
-          fontSize: '22px', margin: '0 0 24px', letterSpacing: '0.04em',
+          color: '#1b2b4b', fontFamily: 'var(--font-poppins), Poppins, sans-serif', fontWeight: '800',
+          fontSize: '24px', margin: '0 0 24px', letterSpacing: '0.02em',
           textTransform: 'uppercase', textAlign: 'center'
         }}>
           ENQUIRE NOW
@@ -152,19 +155,19 @@ const EnquireModal = ({ isOpen, setIsOpen }) => {
         {success ? (
           <div style={{ textAlign: 'center', padding: '28px 0' }}>
             <div style={{
-              width: '54px', height: '54px', borderRadius: '50%',
-              background: 'var(--color-shadow-inner)', border: '2px solid var(--color-gold)',
+              width: '64px', height: '64px', borderRadius: '50%',
+              background: 'rgba(0, 112, 255, 0.1)', border: '2px solid #0070ff',
               display: 'flex', alignItems: 'center', justifyContent: 'center',
-              margin: '0 auto 14px',
+              margin: '0 auto 16px',
             }}>
-              <svg width="24" height="24" fill="none" stroke="var(--color-gold)" strokeWidth="2.5" viewBox="0 0 24 24">
+              <svg width="32" height="32" fill="none" stroke="#0070ff" strokeWidth="2.5" viewBox="0 0 24 24">
                 <path strokeLinecap="round" strokeLinejoin="round" d="M5 13l4 4L19 7" />
               </svg>
             </div>
-            <p style={{ color: '#fff', fontFamily: F_JOST, fontSize: '18px', fontWeight: '700', marginBottom: '6px' }}>
+            <p style={{ color: '#1b2b4b', fontFamily: 'var(--font-poppins), Poppins, sans-serif', fontSize: '20px', fontWeight: '700', marginBottom: '6px' }}>
               Thank You!
             </p>
-            <p style={{ color: '#999', fontFamily: F_SANS, fontSize: '13px' }}>
+            <p style={{ color: '#666', fontSize: '14px' }}>
               Our team will contact you shortly.
             </p>
           </div>
@@ -172,50 +175,56 @@ const EnquireModal = ({ isOpen, setIsOpen }) => {
           <form onSubmit={submit}>
 
             {/* Name */}
-            <div style={{ marginBottom: '20px' }}>
+            <div style={{ marginBottom: '16px' }}>
               <input
                 name="fullname" required value={form.fullname} onChange={handle}
                 placeholder="Enter your name"
                 style={fieldStyle}
+                onFocus={e => { e.currentTarget.style.borderColor = '#0070ff'; e.currentTarget.style.boxShadow = '0 0 0 3px rgba(0, 112, 255, 0.15)' }}
+                onBlur={e => { e.currentTarget.style.borderColor = '#d1d5db'; e.currentTarget.style.boxShadow = 'none' }}
               />
             </div>
 
             {/* Email */}
-            <div style={{ marginBottom: '20px' }}>
+            <div style={{ marginBottom: '16px' }}>
               <input
                 name="email" type="email" value={form.email} onChange={handle}
                 placeholder="Enter your email (Optional)"
                 style={fieldStyle}
+                onFocus={e => { e.currentTarget.style.borderColor = '#0070ff'; e.currentTarget.style.boxShadow = '0 0 0 3px rgba(0, 112, 255, 0.15)' }}
+                onBlur={e => { e.currentTarget.style.borderColor = '#d1d5db'; e.currentTarget.style.boxShadow = 'none' }}
               />
             </div>
 
             {/* Phone */}
-            <div style={{ marginBottom: '20px' }}>
+            <div style={{ marginBottom: '18px' }}>
               <input
                 name="phone" required value={form.phone} onChange={handle}
                 placeholder="Enter your phone number" maxLength={10}
                 style={fieldStyle}
+                onFocus={e => { e.currentTarget.style.borderColor = '#0070ff'; e.currentTarget.style.boxShadow = '0 0 0 3px rgba(0, 112, 255, 0.15)' }}
+                onBlur={e => { e.currentTarget.style.borderColor = '#d1d5db'; e.currentTarget.style.boxShadow = 'none' }}
               />
             </div>
 
             {error && (
               <p style={{
-                color: '#f87171', fontSize: '12px', fontFamily: F_SANS,
-                marginBottom: '14px',
+                color: '#ef4444', fontSize: '13px',
+                marginBottom: '14px', fontWeight: '500'
               }}>
                 {error}
               </p>
             )}
 
             {/* Consent */}
-            <div style={{ display: 'flex', alignItems: 'flex-start', gap: '8px', marginBottom: '20px' }}>
+            <div style={{ display: 'flex', alignItems: 'flex-start', gap: '10px', marginBottom: '22px' }}>
               <input
                 type="checkbox" id="popup-privacy" required defaultChecked
-                style={{ accentColor: '#007bff', marginTop: '2px', flexShrink: 0 }}
+                style={{ accentColor: '#0070ff', marginTop: '3px', flexShrink: 0, width: '16px', height: '16px' }}
               />
-              <label htmlFor="popup-privacy" style={{ fontSize: '11px', color: '#555', fontFamily: F_SANS, lineHeight: 1.6, cursor: 'pointer' }}>
+              <label htmlFor="popup-privacy" style={{ fontSize: '12px', color: '#6b7280', lineHeight: 1.5, cursor: 'pointer' }}>
                 I agree to receive updates as per the{' '}
-                <Link href="/privacy-policy" style={{ color: '#006838', textDecoration: 'underline' }}>Privacy Policy</Link>.
+                <Link href="/privacy-policy" style={{ color: '#0070ff', fontWeight: '600', textDecoration: 'underline' }}>Privacy Policy</Link>.
               </label>
             </div>
 
@@ -225,13 +234,16 @@ const EnquireModal = ({ isOpen, setIsOpen }) => {
               <button
                 type="submit" disabled={loading}
                 style={{
-                  background: '#006838', color: '#fff', border: 'none',
-                  padding: '13px 48px', fontFamily: F_JOST, fontWeight: '700',
-                  fontSize: '14px', letterSpacing: '0.05em', cursor: loading ? 'not-allowed' : 'pointer',
-                  textTransform: 'uppercase', borderRadius: '4px',
+                  background: '#0070ff', color: '#fff', border: 'none',
+                  padding: '14px 48px', fontFamily: 'var(--font-poppins), Poppins, sans-serif', fontWeight: '700',
+                  fontSize: '15px', letterSpacing: '0.05em', cursor: loading ? 'not-allowed' : 'pointer',
+                  textTransform: 'uppercase', borderRadius: '8px',
                   opacity: loading ? 0.75 : 1, width: '100%',
-                  transition: 'opacity 0.2s',
+                  transition: 'all 0.3s ease',
+                  boxShadow: '0 4px 15px rgba(0, 112, 255, 0.35)',
                 }}
+                onMouseEnter={e => { if (!loading) e.currentTarget.style.background = '#0050d5' }}
+                onMouseLeave={e => { if (!loading) e.currentTarget.style.background = '#0070ff' }}
               >
                 {loading ? 'SENDING...' : 'SUBMIT'}
               </button>
