@@ -50,20 +50,16 @@ const Highlights = ({ setIsOpen }) => {
       <div className="container mx-auto px-4" style={{ maxWidth: '1280px' }}>
 
         {/* Header */}
-        <div className="text-center max-w-3xl mx-auto mb-16" data-aos="fade-up">
-          <span className="text-[#3b82f6] font-bold text-[14px] tracking-[2.5px] uppercase mb-3 block">
+        <div className="text-center max-w-5xl mx-auto mb-12" data-aos="fade-up">
+          <span className="text-[#3b82f6] font-bold text-[14px] tracking-[2.5px] uppercase mb-2.5 block">
             WHY CHOOSE CODE 67
           </span>
-          <h2 className="text-[#1b2b4b] text-[32px] md:text-[40px] font-extrabold mb-4 leading-tight">
+          <h2 className="text-[#1b2b4b] text-[28px] font-extrabold m-0 leading-snug md:whitespace-nowrap">
             Indulgence Reimagined with Panoramic Views
           </h2>
-          <p className="text-[#6c757d] text-[16px] m-0">
-            Discover architectural brilliance and curated privileges engineered specifically for an uncompromising lifestyle.
-          </p>
         </div>
 
-        {/* 4x2 / 2x4 Feature Cards Grid */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 md:gap-7 mb-14">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 md:gap-7">
           {highlights.map((item, i) => (
             <div
               key={i}
@@ -93,28 +89,6 @@ const Highlights = ({ setIsOpen }) => {
               <div className="w-12 h-[3px] bg-[#0d6efd]/20 group-hover:bg-[#0d6efd] group-hover:w-full rounded-full mt-6 transition-all duration-300"></div>
             </div>
           ))}
-        </div>
-
-        {/* Centered CTA */}
-        <div className="text-center" data-aos="fade-up">
-          <button
-            onClick={() => setIsOpen(true)}
-            className="inline-flex items-center justify-center px-10 py-4 rounded-[50px] text-white font-semibold text-[15px] tracking-wide transition-all duration-300 shadow-[0_6px_20px_rgba(26,109,255,0.35)]"
-            style={{
-              background: 'linear-gradient(135deg, #2563eb 0%, #1e40af 100%)',
-              border: 'none',
-            }}
-            onMouseEnter={e => {
-              e.currentTarget.style.transform = 'translateY(-2px)'
-              e.currentTarget.style.boxShadow = '0 10px 28px rgba(26,109,255,0.5)'
-            }}
-            onMouseLeave={e => {
-              e.currentTarget.style.transform = 'none'
-              e.currentTarget.style.boxShadow = '0 6px 20px rgba(26,109,255,0.35)'
-            }}
-          >
-            Enquire Now For All Highlights
-          </button>
         </div>
 
       </div>

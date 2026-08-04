@@ -21,7 +21,7 @@ const MasterPlan = ({ setIsOpen }) => {
         </div>
 
         {/* Cards Grid */}
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 mb-12">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
           
           {/* 2 BHK Card */}
           <div className="bg-white rounded-[20px] shadow-[0_8px_30px_rgba(0,0,0,0.06)] overflow-hidden border border-[#f3f4f6] cursor-pointer hover:shadow-[0_12px_40px_rgba(0,0,0,0.1)] transition-shadow duration-300" onClick={() => setIsOpen(true)}>
@@ -59,47 +59,6 @@ const MasterPlan = ({ setIsOpen }) => {
             </div>
           </div>
 
-        </div>
-
-        {/* Buttons */}
-        <div className="flex flex-col sm:flex-row justify-center items-center gap-4">
-          <button 
-            onClick={() => setIsOpen(true)}
-            className="w-full sm:w-auto inline-flex items-center justify-center px-10 py-3.5 rounded-[50px] text-white font-semibold text-[15px] transition-all duration-300 gap-2"
-            style={{
-              background: '#1a6dff',
-              boxShadow: '0 4px 14px 0 rgba(26, 109, 255, 0.39)',
-              border: 'none',
-            }}
-            onMouseEnter={e => {
-              e.currentTarget.style.background = '#0050d5';
-              e.currentTarget.style.transform = 'translateY(-2px)';
-            }}
-            onMouseLeave={e => {
-              e.currentTarget.style.background = '#1a6dff';
-              e.currentTarget.style.transform = 'none';
-            }}
-          >
-            <i className="bi bi-download"></i> Download Brochure
-          </button>
-          
-          <button 
-            onClick={() => setIsOpen(true)}
-            className="w-full sm:w-auto inline-flex items-center justify-center px-10 py-3.5 rounded-[50px] font-semibold text-[15px] transition-all duration-300"
-            style={{
-              background: 'transparent',
-              color: '#1b2b4b',
-              border: '1.5px solid #1b2b4b',
-            }}
-            onMouseEnter={e => {
-              e.currentTarget.style.background = '#f3f4f6';
-            }}
-            onMouseLeave={e => {
-              e.currentTarget.style.background = 'transparent';
-            }}
-          >
-            Enquire Now
-          </button>
         </div>
 
       </div>
