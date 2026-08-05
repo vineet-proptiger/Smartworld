@@ -88,7 +88,7 @@ export default function Home() {
           <span className="text-[11px] sm:text-[12px] font-bold text-white mt-1 leading-none">ENQUIRE</span>
         </button>
         <a
-          href={`https://wa.me/918447755103?text=Hi%20I%20am%20interested%20in%20${encodeURIComponent(PROJECT_NAME)}`}
+          href={`https://wa.me/919718344024?text=Hi%20I%20am%20interested%20in%20${encodeURIComponent(PROJECT_NAME)}`}
           target="_blank" rel="noopener noreferrer"
           className="flex-1 flex flex-col items-center justify-center py-2 px-1"
           style={{ background: '#25D366' }}

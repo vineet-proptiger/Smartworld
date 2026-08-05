@@ -65,8 +65,7 @@ const Highlights = ({ setIsOpen }) => {
               key={i}
               data-aos="fade-up"
               data-aos-delay={(i * 50).toString()}
-              onClick={() => setIsOpen(true)}
-              className="group relative bg-white rounded-[20px] p-7 border border-[#e2effe] shadow-[0_6px_25px_rgba(0,0,0,0.03)] hover:-translate-y-2 hover:shadow-[0_16px_36px_rgba(13,110,253,0.14)] hover:border-[#0d6efd]/40 transition-all duration-300 cursor-pointer flex flex-col justify-between overflow-hidden"
+              className="group relative bg-white rounded-[20px] p-7 border border-[#e2effe] shadow-[0_6px_25px_rgba(0,0,0,0.03)] hover:-translate-y-2 hover:shadow-[0_16px_36px_rgba(13,110,253,0.14)] hover:border-[#0d6efd]/40 transition-all duration-300 flex flex-col justify-between overflow-hidden"
             >
               <div>
                 {/* Top Row: Icon & Title Side-by-Side */}
