@@ -52,10 +52,10 @@ const Highlights = ({ setIsOpen }) => {
         {/* Header */}
         <div className="text-center max-w-5xl mx-auto mb-12" data-aos="fade-up">
           <span className="text-[#3b82f6] font-bold text-[14px] tracking-[2.5px] uppercase mb-2.5 block">
-            WHY CHOOSE SMARTWORLD SECTOR 67
+            WHY CHOOSE SMARTWORLD SECTOR 67A
           </span>
           <h2 className="text-[#163B72] text-[26px] sm:text-[32px] md:text-[38px] font-extrabold m-0 leading-tight md:whitespace-nowrap">
-            Highlights of Smartworld Sector 67
+            Highlights of Smartworld Sector 67A
           </h2>
         </div>
 

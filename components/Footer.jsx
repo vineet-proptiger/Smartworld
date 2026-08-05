@@ -20,7 +20,7 @@ const Footer = () => (
         data-aos="fade-up" data-aos-delay="50"
         className="text-[#4DA3FF] font-semibold text-[12px] sm:text-[13.5px] tracking-[2px] uppercase m-0"
       >
-        LANDMARK LUXURY RESIDENTIAL DEVELOPMENT — SECTOR 67, GURUGRAM
+        LANDMARK LUXURY RESIDENTIAL DEVELOPMENT — SECTOR 67A, GURUGRAM
       </p>
 
       {/* ── Accent Underline ── */}
@@ -31,7 +31,7 @@ const Footer = () => (
         data-aos="fade-up" data-aos-delay="100"
         className="text-[#a1a1aa] text-[15px] sm:text-[16px] leading-[1.8] max-w-[920px] mb-10"
       >
-        On one of Gurugram's most sought-after corridors, Smartworld Sector 67 rises as an ultra-luxury landmark — three iconic G+30 towers with a striking premium façade, holding just 366 exclusive residences across five landscaped acres.
+        On one of Gurugram's most sought-after corridors, Smartworld Sector 67A rises as an ultra-luxury landmark — three iconic G+30 towers with a striking premium façade, holding just 366 exclusive residences across five landscaped acres.
       </p>
 
       {/* ── RERA Number Box ── */}

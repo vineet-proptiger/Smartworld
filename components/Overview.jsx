@@ -69,7 +69,7 @@ const Overview = ({ setIsOpen }) => {
                     <i className="fa-solid fa-circle-check text-[18px] sm:text-[22px]"></i>
                   </div>
                   <div>
-                    <h5 className="text-[#1b2b4b] font-bold text-[13.5px] sm:text-[16px] mb-1 leading-snug">Unit Types</h5>
+                    <h5 className="text-[#1b2b4b] font-bold text-[13.5px] sm:text-[16px] mb-1 leading-snug">Configuration</h5>
                     <p className="text-[#6c757d] text-[12px] sm:text-[14px] m-0 leading-normal">2, 3 &amp; 3+U BHK</p>
                   </div>
                 </div>
@@ -79,8 +79,8 @@ const Overview = ({ setIsOpen }) => {
                     <i className="fa-solid fa-circle-check text-[18px] sm:text-[22px]"></i>
                   </div>
                   <div>
-                    <h5 className="text-[#1b2b4b] font-bold text-[13.5px] sm:text-[16px] mb-1 leading-snug">Health Priority</h5>
-                    <p className="text-[#6c757d] text-[12px] sm:text-[14px] m-0 leading-normal">75% of buyers</p>
+                    <h5 className="text-[#1b2b4b] font-bold text-[13.5px] sm:text-[16px] mb-1 leading-snug">Project Size</h5>
+                    <p className="text-[#6c757d] text-[12px] sm:text-[14px] m-0 leading-normal">6 Acres Township</p>
                   </div>
                 </div>
                 {/* Feature 3 */}
@@ -89,8 +89,8 @@ const Overview = ({ setIsOpen }) => {
                     <i className="fa-solid fa-circle-check text-[18px] sm:text-[22px]"></i>
                   </div>
                   <div>
-                    <h5 className="text-[#1b2b4b] font-bold text-[13.5px] sm:text-[16px] mb-1 leading-snug">Total Residences</h5>
-                    <p className="text-[#6c757d] text-[12px] sm:text-[14px] m-0 leading-normal">350</p>
+                    <h5 className="text-[#1b2b4b] font-bold text-[13.5px] sm:text-[16px] mb-1 leading-snug">Prime Connectivity</h5>
+                    <p className="text-[#6c757d] text-[12px] sm:text-[14px] m-0 leading-normal">Sohna Road + 5 Mins DMIC Corridor</p>
                   </div>
                 </div>
                 {/* Feature 4 */}
@@ -99,8 +99,8 @@ const Overview = ({ setIsOpen }) => {
                     <i className="fa-solid fa-circle-check text-[18px] sm:text-[22px]"></i>
                   </div>
                   <div>
-                    <h5 className="text-[#1b2b4b] font-bold text-[13.5px] sm:text-[16px] mb-1 leading-snug">350 Starting Price</h5>
-                    <p className="text-[#6c757d] text-[12px] sm:text-[14px] m-0 leading-normal">₹2.40 Cr</p>
+                    <h5 className="text-[#1b2b4b] font-bold text-[13.5px] sm:text-[16px] mb-1 leading-snug">Investment Potential</h5>
+                    <p className="text-[#6c757d] text-[12px] sm:text-[14px] m-0 leading-normal">High Growth Corridor</p>
                   </div>
                 </div>
               </div>

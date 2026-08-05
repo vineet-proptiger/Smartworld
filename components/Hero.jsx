@@ -44,7 +44,7 @@ const Hero = ({ setIsOpen }) => {
                 color: '#4a9eff',
               }}
             >
-              RERA REGISTERED | SMARTWORLDSECTOR 67
+              RERA REGISTERED | SMARTWORLD SECTOR 67A
             </h5>
 
             {/* Main Heading (Guaranteed 2 Lines on Desktop) */}
@@ -57,7 +57,7 @@ const Hero = ({ setIsOpen }) => {
                 lineHeight: 1.22,
               }}
             >
-              Smartworld Sector 67 New Launch
+              Smartworld Sector 67A New Launch
             </h1>
 
             {/* Subtitle */}

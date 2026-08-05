@@ -6,7 +6,7 @@ import { locationMap } from '../lib/images'
 const locationList = [
   {
     icon: 'fa-solid fa-train-subway',
-    title: 'Proposed Metro (Sec 67)',
+    title: 'Proposed Metro (Sec 67A)',
     time: '5 Min'
   },
   {
@@ -78,7 +78,7 @@ const Location = () => {
           >
             <Image
               src={locationMap}
-              alt="Smartworld Sector 67 Location Map"
+              alt="Smartworld Sector 67A Location Map"
               fill
               className="object-cover w-full h-full hover:scale-[1.02] transition-transform duration-500"
               sizes="(max-width: 1024px) 100vw, 50vw"
