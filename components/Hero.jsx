@@ -151,11 +151,21 @@ const Hero = ({ setIsOpen }) => {
               <button
                 type="button"
                 onClick={() => setIsOpen && setIsOpen(true)}
-                className="w-full sm:w-auto inline-flex items-center justify-center px-8 sm:px-9 py-3.5 rounded-full font-bold text-base transition-all duration-300 hover:bg-white hover:text-[#1b2b4b] cursor-pointer text-center"
+                className="w-full sm:w-auto inline-flex items-center justify-center px-8 sm:px-9 py-3.5 rounded-full font-bold text-base transition-all duration-300 hover:scale-105 cursor-pointer text-center"
                 style={{
                   background: 'rgba(15, 20, 30, 0.65)',
                   border: '2px solid rgba(255, 255, 255, 0.85)',
                   color: '#ffffff',
+                }}
+                onMouseEnter={e => {
+                  e.currentTarget.style.background = '#ffffff';
+                  e.currentTarget.style.color = '#0070ff';
+                  e.currentTarget.style.borderColor = '#ffffff';
+                }}
+                onMouseLeave={e => {
+                  e.currentTarget.style.background = 'rgba(15, 20, 30, 0.65)';
+                  e.currentTarget.style.color = '#ffffff';
+                  e.currentTarget.style.borderColor = 'rgba(255, 255, 255, 0.85)';
                 }}
               >
                 Download Brochure

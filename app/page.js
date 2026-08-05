@@ -13,7 +13,7 @@ const Amenities = dynamic(() => import('../components/Amenities'), { ssr: true }
 const Location = dynamic(() => import('../components/Location'), { ssr: true })
 const MasterPlan = dynamic(() => import('../components/MasterPlan'), { ssr: true })
 const Downloads = dynamic(() => import('../components/Downloads'), { ssr: true })
-const AboutGodrej = dynamic(() => import('../components/AboutGodrej'), { ssr: true })
+const AboutDeveloper = dynamic(() => import('../components/AboutDeveloper'), { ssr: true })
 const VirtualTour = dynamic(() => import('../components/VirtualTour'), { ssr: true })
 const PaymentPlan = dynamic(() => import('../components/PaymentPlan'), { ssr: true })
 const FAQ = dynamic(() => import('../components/FAQ'), { ssr: true })
@@ -40,7 +40,7 @@ export default function Home() {
       <Location />
       <MasterPlan setIsOpen={setIsOpen} />
       {/* <Downloads setIsOpen={setIsOpen} /> */}
-      {/* <AboutGodrej /> */}
+      {/* <AboutDeveloper setIsOpen={setIsOpen} /> */}
       {/* <VirtualTour setIsOpen={setIsOpen} /> */}
       <FAQ />
       <Footer />

@@ -25,11 +25,11 @@ const Pricing = ({ setIsOpen }) => {
       <div className="container mx-auto px-4 sm:px-6" style={{ maxWidth: '1050px' }}>
         
         {/* Section Header */}
-        <div className="text-center max-w-2xl mx-auto mb-12" data-aos="fade-up">
+        <div className="text-center max-w-5xl mx-auto mb-12" data-aos="fade-up">
           <span className="text-[#0d6efd] font-bold text-[13px] sm:text-[14px] tracking-[2px] uppercase mb-2.5 block">
             PRICE LIST
           </span>
-          <h2 className="text-[#163B72] text-[26px] sm:text-[32px] md:text-[38px] font-extrabold m-0 leading-tight">
+          <h2 className="text-[#163B72] text-[26px] sm:text-[32px] md:text-[38px] font-extrabold m-0 leading-tight md:whitespace-nowrap">
             Splendid Investment Opportunities
           </h2>
         </div>

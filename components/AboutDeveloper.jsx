@@ -189,7 +189,7 @@ const AboutDeveloper = ({ setIsOpen }) => (
               </div>
               <div>
                 <h3 style={{ fontFamily: F_JOST, fontWeight: '800', fontSize: '18px', color: '#fff', margin: '0 0 4px', letterSpacing: '-0.01em' }}>
-                  Godrej Properties
+                  Smartworld Developers
                 </h3>
 
               </div>
@@ -199,15 +199,11 @@ const AboutDeveloper = ({ setIsOpen }) => (
           {/* White Body */}
           <div style={{ padding: '24px 28px', flex: 1, display: 'flex', flexDirection: 'column', justifyContent: 'space-between' }}>
             <p className='text-justify' style={{ color: '#555', fontFamily: F_SANS, lineHeight: 1.85, fontSize: '14px', margin: '0 0 20px' }}>
-              Building spaces that inspire life, work, and well-being.
-
-              ASBL is committed to shaping sustainable developments across Hyderabad, where thoughtful design meets elevated living.
-
-              Our spaces are envisioned as more than just structures — they are vibrant ecosystems that foster collaboration, innovation, and a strong sense of community.
-
-              With a carefully diversified portfolio across premium locations in Hyderabad, spanning delivered landmarks, near-possession developments, and upcoming iconic projects, we continue to set new benchmarks in sustainable real estate.
-
-              At the heart of every development lies our singular vision: to enhance well-being and become the most preferred real estate brand in Hyderabad.
+              Smartworld Developers is envisioned as a premier real estate brand bringing world-class sophistication and unmatched living experiences to Gurugram and beyond.
+              <br /><br />
+              With a commitment to transparency, governance, and rapid execution, Smartworld combines intelligent design, innovative architecture, and prime locations in Gurugram to create iconic developments that elevate modern lifestyles.
+              <br /><br />
+              At the heart of every project lies our focus on customer centricity and sustainable luxury living — delivering spaces that inspire life, community, and enduring value.
             </p>
 
             {/* Stats */}
