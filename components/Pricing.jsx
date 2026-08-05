@@ -10,12 +10,12 @@ const pricingData = [
   {
     type: '3 BHK',
     area: '1750 Sq.ft.',
-    price: '₹ 3.15 Cr.*',
+    price: 'On Request',
   },
   {
     type: '3 BHK + Utility',
     area: '1950 - 2000 Sq. ft.',
-    price: '₹ 3.50 Cr.*',
+    price: 'On Request',
   },
 ]
 
@@ -29,12 +29,9 @@ const Pricing = ({ setIsOpen }) => {
           <span className="text-[#0d6efd] font-bold text-[13px] sm:text-[14px] tracking-[2px] uppercase mb-2.5 block">
             PRICE LIST
           </span>
-          <h2 className="text-[#1b2b4b] text-[26px] sm:text-[32px] md:text-[38px] font-extrabold mb-3 leading-tight">
+          <h2 className="text-[#1b2b4b] text-[26px] sm:text-[32px] md:text-[38px] font-extrabold m-0 leading-tight">
             Splendid Investment Opportunities
           </h2>
-          <p className="text-[#6c757d] text-[14.5px] sm:text-[16px] leading-[1.65] m-0">
-            Easy Payment Plans (Construction Linked &amp; Subvention Plans Available).
-          </p>
         </div>
 
         {/* ── MOBILE / SMALL DEVICE CARDS (Visible below md breakpoint) ── */}

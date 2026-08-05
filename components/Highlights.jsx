@@ -54,7 +54,7 @@ const Highlights = ({ setIsOpen }) => {
           <span className="text-[#3b82f6] font-bold text-[14px] tracking-[2.5px] uppercase mb-2.5 block">
             WHY CHOOSE CODE 67
           </span>
-          <h2 className="text-[#1b2b4b] text-[28px] font-extrabold m-0 leading-snug md:whitespace-nowrap">
+          <h2 className="text-[#1b2b4b] text-[26px] sm:text-[32px] md:text-[38px] font-extrabold m-0 leading-tight md:whitespace-nowrap">
             Indulgence Reimagined with Panoramic Views
           </h2>
         </div>

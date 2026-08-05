@@ -15,6 +15,8 @@ const MasterPlan = dynamic(() => import('../components/MasterPlan'), { ssr: true
 const Downloads = dynamic(() => import('../components/Downloads'), { ssr: true })
 const AboutGodrej = dynamic(() => import('../components/AboutGodrej'), { ssr: true })
 const VirtualTour = dynamic(() => import('../components/VirtualTour'), { ssr: true })
+const PaymentPlan = dynamic(() => import('../components/PaymentPlan'), { ssr: true })
+const FAQ = dynamic(() => import('../components/FAQ'), { ssr: true })
 const Footer = dynamic(() => import('../components/Footer'), { ssr: true })
 
 const Gallery = dynamic(() => import('../components/Gallery'), { ssr: false })
@@ -33,12 +35,14 @@ export default function Home() {
       <Highlights setIsOpen={setIsOpen} />
       <Gallery setIsOpen={setIsOpen} />
       <Pricing setIsOpen={setIsOpen} />
+      <PaymentPlan setIsOpen={setIsOpen} />
       <Amenities setIsOpen={setIsOpen} />
       <Location />
       <MasterPlan setIsOpen={setIsOpen} />
       {/* <Downloads setIsOpen={setIsOpen} /> */}
       {/* <AboutGodrej /> */}
       {/* <VirtualTour setIsOpen={setIsOpen} /> */}
+      <FAQ />
       <Footer />
       <EnquireModal isOpen={isOpen} setIsOpen={setIsOpen} />
 

@@ -74,12 +74,9 @@ const Amenities = () => {
           <span className="text-[#3b82f6] font-bold text-[14px] tracking-[2px] uppercase mb-3 block">
             WORLD CLASS AMENITIES
           </span>
-          <h2 className="text-[#1b2b4b] text-[26px] sm:text-[32px] md:text-[38px] font-bold mb-3">
+          <h2 className="text-[#1b2b4b] text-[26px] sm:text-[32px] md:text-[38px] font-bold m-0">
             Experience Luxury Lifestyle
           </h2>
-          <p className="text-[#6c757d] text-[16px] m-0">
-            Enjoy premium amenities crafted for modern living.
-          </p>
         </div>
 
         {/* 4x3 Grid of Amenity Cards */}

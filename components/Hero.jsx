@@ -126,11 +126,11 @@ const Hero = ({ setIsOpen }) => {
             </div>
 
             {/* Buttons */}
-            <div className="flex flex-wrap items-center gap-4">
+            <div className="flex flex-col sm:flex-row items-center gap-3.5 sm:gap-4 w-full sm:w-auto">
               <button
                 type="button"
                 onClick={() => setIsOpen && setIsOpen(true)}
-                className="inline-flex items-center justify-center px-9 py-3.5 rounded-full text-white font-bold text-base transition-all duration-300 hover:scale-105 cursor-pointer border-none"
+                className="w-full sm:w-auto inline-flex items-center justify-center px-8 sm:px-9 py-3.5 rounded-full text-white font-bold text-base transition-all duration-300 hover:scale-105 cursor-pointer border-none text-center"
                 style={{
                   background: '#0070ff',
                   boxShadow: '0 6px 20px rgba(0, 112, 255, 0.4)',
@@ -141,7 +141,7 @@ const Hero = ({ setIsOpen }) => {
               <button
                 type="button"
                 onClick={() => setIsOpen && setIsOpen(true)}
-                className="inline-flex items-center justify-center px-9 py-3.5 rounded-full font-bold text-base transition-all duration-300 hover:bg-white hover:text-[#1b2b4b] cursor-pointer"
+                className="w-full sm:w-auto inline-flex items-center justify-center px-8 sm:px-9 py-3.5 rounded-full font-bold text-base transition-all duration-300 hover:bg-white hover:text-[#1b2b4b] cursor-pointer text-center"
                 style={{
                   background: 'rgba(15, 20, 30, 0.65)',
                   border: '2px solid rgba(255, 255, 255, 0.85)',

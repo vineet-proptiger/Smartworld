@@ -36,12 +36,9 @@ const Location = () => {
           <span className="text-[#0d6efd] font-bold text-[13px] sm:text-[14px] tracking-[2.5px] uppercase mb-3 block">
             LOCATION ADVANTAGES
           </span>
-          <h2 className="text-[#1b2b4b] text-[26px] sm:text-[32px] md:text-[38px] font-extrabold mb-4 leading-tight">
+          <h2 className="text-[#1b2b4b] text-[26px] sm:text-[32px] md:text-[38px] font-extrabold m-0 leading-tight">
             Prime Location Advantages
           </h2>
-          <p className="text-[#6c757d] text-[15.5px] sm:text-[16px] leading-[1.65] m-0">
-            Located in the most developed and prestigious Sector 67 of Gurugram, where Delhi and major business hubs are just minutes away.
-          </p>
         </div>
 
         {/* ── 4 Location Cards Grid ── */}
@@ -51,15 +48,15 @@ const Location = () => {
               key={index}
               data-aos="fade-up"
               data-aos-delay={(index * 70).toString()}
-              className="location-card group bg-white rounded-[24px] p-8 md:p-9 text-center border border-[#f1f5f9] shadow-[0_8px_30px_rgba(0,0,0,0.06)] hover:shadow-[0_16px_40px_rgba(13,110,253,0.14)] hover:-translate-y-2 transition-all duration-300 flex flex-col items-center justify-center cursor-pointer"
+              className="location-card group bg-white hover:bg-[#0070ff] rounded-[24px] p-8 md:p-9 text-center border border-[#f1f5f9] hover:border-[#0070ff] shadow-[0_8px_30px_rgba(0,0,0,0.06)] hover:shadow-[0_16px_40px_rgba(0,112,255,0.3)] hover:-translate-y-2 transition-all duration-300 flex flex-col items-center justify-center cursor-pointer"
             >
-              <div className="text-[#0d6efd] text-[38px] md:text-[42px] mb-5 transform group-hover:scale-110 transition-transform duration-300">
+              <div className="text-[#0d6efd] group-hover:text-white text-[38px] md:text-[42px] mb-5 transform group-hover:scale-110 transition-all duration-300">
                 <i className={card.icon}></i>
               </div>
-              <h4 className="text-[#1b2b4b] font-bold text-[17px] sm:text-[18px] mb-2 leading-snug group-hover:text-[#0d6efd] transition-colors duration-200">
+              <h4 className="text-[#1b2b4b] group-hover:text-white font-bold text-[17px] sm:text-[18px] mb-2 leading-snug transition-colors duration-300">
                 {card.title}
               </h4>
-              <h3 className="text-[#1b2b4b] font-extrabold text-[22px] sm:text-[24px] m-0 tracking-tight">
+              <h3 className="text-[#1b2b4b] group-hover:text-white font-extrabold text-[22px] sm:text-[24px] m-0 tracking-tight transition-colors duration-300">
                 {card.time}
               </h3>
             </div>
