@@ -54,13 +54,13 @@ const LeadForm = ({ formName = 'Hero Form', btnText = 'Submit Now' }) => {
 
   if (success) return (
     <div className="text-center py-6">
-      <div className="w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4 bg-green-100">
+      <div className="w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4 bg-green-100 shadow-[0_4px_16px_rgba(34,197,94,0.3)]">
         <svg className="w-8 h-8 text-green-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
           <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2.5} d="M5 13l4 4L19 7" />
         </svg>
       </div>
-      <h4 className="text-xl font-bold text-gray-900 mb-2">Thank You!</h4>
-      <p className="text-gray-700 text-sm">Our team will contact you shortly.</p>
+      <h4 className="text-xl font-bold text-[#ffffff] mb-2">Thank You!</h4>
+      <p className="text-[#e2effe] text-sm font-medium">Our team will contact you shortly.</p>
     </div>
   )
 
