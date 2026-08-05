@@ -63,7 +63,7 @@ export default function Home() {
       <div className="sticky-bottom-bar">
         <a
           id="mobile-call"
-          href="tel:+918447755103"
+          href="tel:+919718344024"
           className="flex-1 flex flex-col items-center justify-center py-2 px-1"
           style={{ background: '#1a1a1a', borderRight: '1px solid #333' }}
         >
