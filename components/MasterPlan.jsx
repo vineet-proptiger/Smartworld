@@ -12,7 +12,7 @@ const MasterPlan = ({ setIsOpen }) => {
           <span className="text-[#3b82f6] font-bold text-[14px] tracking-[2px] uppercase mb-3 block">
             FLOOR PLANS
           </span>
-          <h2 className="text-[#1b2b4b] text-[32px] md:text-[38px] font-bold mb-4">
+          <h2 className="text-[#1b2b4b] text-[26px] sm:text-[32px] md:text-[38px] font-bold mb-4">
             Planned Around Light &amp; Views
           </h2>
           <p className="text-[#6c757d] text-[16px] m-0">

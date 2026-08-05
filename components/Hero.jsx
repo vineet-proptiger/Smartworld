@@ -78,7 +78,6 @@ const Hero = ({ setIsOpen }) => {
               Your Dream Home, Now with Assured Benefits Up to ₹5 Lakh
             </p>
 
-            {/* Info Bar (Guaranteed 1 Row on Desktop/Tablet) */}
             <div
               className="flex flex-col sm:flex-row sm:items-center justify-between p-5 mb-9 rounded-[20px]"
               style={{
@@ -90,11 +89,11 @@ const Hero = ({ setIsOpen }) => {
               }}
             >
               {/* Starting Price */}
-              <div className="flex-1 px-2 mb-3 sm:mb-0">
-                <span className="block mb-1 text-[13px] text-white/75 font-normal">
+              <div className="flex flex-row items-center justify-between sm:block flex-1 px-2 mb-3 sm:mb-0 pb-3 sm:pb-0 border-b border-white/10 sm:border-b-0">
+                <span className="text-[13.5px] text-white/75 font-normal sm:block sm:mb-1">
                   Starting Price
                 </span>
-                <h4 className="text-[18px] sm:text-[20px] xl:text-[22px] font-extrabold text-[#2563eb] m-0 tracking-tight">
+                <h4 className="text-[17px] sm:text-[20px] xl:text-[22px] font-extrabold text-[#3b82f6] m-0 tracking-tight text-right sm:text-left">
                   ₹ 2.40 Cr*
                 </h4>
               </div>
@@ -103,11 +102,11 @@ const Hero = ({ setIsOpen }) => {
               <div className="hidden sm:block w-[1px] h-11 bg-white/20 mx-2"></div>
 
               {/* Payment Plan */}
-              <div className="flex-1 px-2 mb-3 sm:mb-0 sm:pl-5">
-                <span className="block mb-1 text-[13px] text-white/75 font-normal">
+              <div className="flex flex-row items-center justify-between sm:block flex-1 px-2 mb-3 sm:mb-0 pb-3 sm:pb-0 sm:pl-5 border-b border-white/10 sm:border-b-0">
+                <span className="text-[13.5px] text-white/75 font-normal sm:block sm:mb-1">
                   Payment Plan
                 </span>
-                <h4 className="text-[18px] sm:text-[20px] xl:text-[22px] font-extrabold text-white m-0 tracking-tight">
+                <h4 className="text-[17px] sm:text-[20px] xl:text-[22px] font-extrabold text-white m-0 tracking-tight text-right sm:text-left">
                   30:40:30
                 </h4>
               </div>
@@ -116,11 +115,11 @@ const Hero = ({ setIsOpen }) => {
               <div className="hidden sm:block w-[1px] h-11 bg-white/20 mx-2"></div>
 
               {/* Configuration */}
-              <div className="flex-[1.3] px-2 sm:pl-5">
-                <span className="block mb-1 text-[13px] text-white/75 font-normal">
+              <div className="flex flex-row items-center justify-between sm:block flex-[1.3] px-2 sm:pl-5">
+                <span className="text-[13.5px] text-white/75 font-normal sm:block sm:mb-1">
                   Configuration
                 </span>
-                <h4 className="text-[16px] sm:text-[17px] xl:text-[20px] font-extrabold text-white m-0 tracking-tight whitespace-nowrap">
+                <h4 className="text-[15px] sm:text-[17px] xl:text-[20px] font-extrabold text-white m-0 tracking-tight text-right sm:text-left whitespace-nowrap">
                   1350 sq.ft. | 1750 sq.ft.
                 </h4>
               </div>

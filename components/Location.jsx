@@ -36,7 +36,7 @@ const Location = () => {
           <span className="text-[#0d6efd] font-bold text-[13px] sm:text-[14px] tracking-[2.5px] uppercase mb-3 block">
             LOCATION ADVANTAGES
           </span>
-          <h2 className="text-[#1b2b4b] text-[32px] sm:text-[38px] md:text-[40px] font-extrabold mb-4 leading-tight">
+          <h2 className="text-[#1b2b4b] text-[26px] sm:text-[32px] md:text-[38px] font-extrabold mb-4 leading-tight">
             Prime Location Advantages
           </h2>
           <p className="text-[#6c757d] text-[15.5px] sm:text-[16px] leading-[1.65] m-0">

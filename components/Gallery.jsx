@@ -23,7 +23,7 @@ const Gallery = () => {
           <span className="block text-[#0070ff] font-bold text-[13px] uppercase tracking-[2.5px] mb-2">
             PROJECT GALLERY
           </span>
-          <h2 className="text-[#1b2b4b] font-extrabold text-[32px] sm:text-[38px] tracking-tight">
+          <h2 className="text-[#1b2b4b] font-extrabold text-[26px] sm:text-[32px] md:text-[38px] tracking-tight">
             A closer look
           </h2>
         </div>

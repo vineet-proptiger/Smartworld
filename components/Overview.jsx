@@ -31,60 +31,52 @@ const Overview = ({ setIsOpen }) => {
               <span className="text-[#0d6efd] font-bold text-[14px] tracking-widest uppercase mb-3 block">
                 Wellness Architecture
               </span>
-              <h2 className="text-[#1b2b4b] text-[32px] md:text-[38px] font-extrabold leading-[1.2] mb-5">
+              <h2 className="text-[#1b2b4b] text-[25px] sm:text-[30px] md:text-[38px] font-extrabold leading-[1.2] mb-4">
                 Designed by architects. Built for wellness.
               </h2>
               <p className="text-[#6c757d] text-[15px] leading-[1.7] mb-8 pr-0 lg:pr-10">
                 Code 67 represents Gurugram's first true wellness-themed residence. Architect-led design integrates healing spaces, organic living, and mindful movement into every floor plan. 75% of luxury homebuyers rank health and wellness above size and view—we built for that priority.
               </p>
               
-              <div className="flex flex-wrap -mx-3 mt-4">
+              <div className="grid grid-cols-2 gap-4 sm:gap-6 mt-6 mb-8">
                 {/* Feature 1 */}
-                <div className="w-full sm:w-1/2 px-3 mb-8">
-                  <div className="flex items-start gap-3">
-                    <div className="mt-1 flex-shrink-0 text-[#0d6efd]">
-                      <i className="fa-solid fa-circle-check text-[22px]"></i>
-                    </div>
-                    <div>
-                      <h5 className="text-[#1b2b4b] font-bold text-[16px] mb-1">Unit Types</h5>
-                      <p className="text-[#6c757d] text-[14px] m-0">2, 3 &amp; 3+U BHK</p>
-                    </div>
+                <div className="flex items-start gap-2 sm:gap-3">
+                  <div className="mt-0.5 flex-shrink-0 text-[#0d6efd]">
+                    <i className="fa-solid fa-circle-check text-[18px] sm:text-[22px]"></i>
+                  </div>
+                  <div>
+                    <h5 className="text-[#1b2b4b] font-bold text-[13.5px] sm:text-[16px] mb-1 leading-snug">Unit Types</h5>
+                    <p className="text-[#6c757d] text-[12px] sm:text-[14px] m-0 leading-normal">2, 3 &amp; 3+U BHK</p>
                   </div>
                 </div>
                 {/* Feature 2 */}
-                <div className="w-full sm:w-1/2 px-3 mb-8">
-                  <div className="flex items-start gap-3">
-                    <div className="mt-1 flex-shrink-0 text-[#0d6efd]">
-                      <i className="fa-solid fa-circle-check text-[22px]"></i>
-                    </div>
-                    <div>
-                      <h5 className="text-[#1b2b4b] font-bold text-[16px] mb-1">Health Priority</h5>
-                      <p className="text-[#6c757d] text-[14px] m-0">75% of buyers</p>
-                    </div>
+                <div className="flex items-start gap-2 sm:gap-3">
+                  <div className="mt-0.5 flex-shrink-0 text-[#0d6efd]">
+                    <i className="fa-solid fa-circle-check text-[18px] sm:text-[22px]"></i>
+                  </div>
+                  <div>
+                    <h5 className="text-[#1b2b4b] font-bold text-[13.5px] sm:text-[16px] mb-1 leading-snug">Health Priority</h5>
+                    <p className="text-[#6c757d] text-[12px] sm:text-[14px] m-0 leading-normal">75% of buyers</p>
                   </div>
                 </div>
                 {/* Feature 3 */}
-                <div className="w-full sm:w-1/2 px-3 mb-8">
-                  <div className="flex items-start gap-3">
-                    <div className="mt-1 flex-shrink-0 text-[#0d6efd]">
-                      <i className="fa-solid fa-circle-check text-[22px]"></i>
-                    </div>
-                    <div>
-                      <h5 className="text-[#1b2b4b] font-bold text-[16px] mb-1">Total Residences</h5>
-                      <p className="text-[#6c757d] text-[14px] m-0">350</p>
-                    </div>
+                <div className="flex items-start gap-2 sm:gap-3">
+                  <div className="mt-0.5 flex-shrink-0 text-[#0d6efd]">
+                    <i className="fa-solid fa-circle-check text-[18px] sm:text-[22px]"></i>
+                  </div>
+                  <div>
+                    <h5 className="text-[#1b2b4b] font-bold text-[13.5px] sm:text-[16px] mb-1 leading-snug">Total Residences</h5>
+                    <p className="text-[#6c757d] text-[12px] sm:text-[14px] m-0 leading-normal">350</p>
                   </div>
                 </div>
                 {/* Feature 4 */}
-                <div className="w-full sm:w-1/2 px-3 mb-8">
-                  <div className="flex items-start gap-3">
-                    <div className="mt-1 flex-shrink-0 text-[#0d6efd]">
-                      <i className="fa-solid fa-circle-check text-[22px]"></i>
-                    </div>
-                    <div>
-                      <h5 className="text-[#1b2b4b] font-bold text-[16px] mb-1">350 Starting Price</h5>
-                      <p className="text-[#6c757d] text-[14px] m-0">₹2.40 Cr</p>
-                    </div>
+                <div className="flex items-start gap-2 sm:gap-3">
+                  <div className="mt-0.5 flex-shrink-0 text-[#0d6efd]">
+                    <i className="fa-solid fa-circle-check text-[18px] sm:text-[22px]"></i>
+                  </div>
+                  <div>
+                    <h5 className="text-[#1b2b4b] font-bold text-[13.5px] sm:text-[16px] mb-1 leading-snug">350 Starting Price</h5>
+                    <p className="text-[#6c757d] text-[12px] sm:text-[14px] m-0 leading-normal">₹2.40 Cr</p>
                   </div>
                 </div>
               </div>
