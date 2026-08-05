@@ -12,8 +12,8 @@ const Hero = ({ setIsOpen }) => {
         color: '#1b2b4b',
       }}
     >
-      {/* Dark overlay */}
-      <div className="absolute inset-0 bg-black/55 z-0" />
+      {/* Dark overlay (disabled on small devices) */}
+      <div className="hidden md:block absolute inset-0 bg-black/55 z-0" />
 
       <div className="container mx-auto px-4 sm:px-6 relative z-10" style={{ maxWidth: '1350px' }}>
         <div className="flex flex-col lg:flex-row items-center justify-between gap-10 lg:gap-6">
