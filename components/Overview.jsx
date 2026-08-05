@@ -1,9 +1,11 @@
 'use client'
-import React from 'react'
+import React, { useState } from 'react'
 import Image from 'next/image'
 import { overviewImage } from '../lib/images'
 
 const Overview = ({ setIsOpen }) => {
+  const [isExpanded, setIsExpanded] = useState(false)
+
   return (
     <section id="overview" className="w-full py-[100px] bg-white font-poppins">
       <div className="container mx-auto px-4" style={{ maxWidth: '1200px' }}>
@@ -32,11 +34,33 @@ const Overview = ({ setIsOpen }) => {
                 Wellness Architecture
               </span>
               <h2 className="text-[#163B72] text-[25px] sm:text-[30px] md:text-[38px] font-extrabold leading-[1.2] mb-4">
-                Designed by architects. Built for wellness.
+                Overview
               </h2>
-              <p className="text-[#6c757d] text-[15px] leading-[1.7] mb-8 pr-0 lg:pr-10">
-                Code 67 represents Gurugram's first true wellness-themed residence. Architect-led design integrates healing spaces, organic living, and mindful movement into every floor plan. 75% of luxury homebuyers rank health and wellness above size and view—we built for that priority.
-              </p>
+              <div className="mb-8 pr-0 lg:pr-6">
+                <div className={`text-[#6c757d] text-[15px] leading-[1.7] space-y-4 ${!isExpanded ? 'line-clamp-5 overflow-hidden' : ''}`}>
+                  <p>
+                    Smartworld Developers is set to launch its newest luxury residential project in Sector 67A, Gurgaon, near M3M Urbana. Although the official project name is yet to be announced, it is already creating strong market buzz and is widely searched as Smartworld New Launch Sector 67A. Positioned in the ₹2.5–3.5 crore segment, the project is expected to launch at approximately ₹18,500 per sq. ft. (all-inclusive, excluding GST) with a buyer-friendly 30:40:30 payment plan.
+                  </p>
+                  <p>
+                    Spread across 6 acres, the project will be developed in phases, with Phase 1 spanning around 3 acres and featuring two G+30 premium residential towers. It is expected to offer spacious 2 BHK (approx. 1,350 sq. ft.) and 3 BHK (approx. 1,750 sq. ft.) apartments, with only four residences per floor to ensure greater privacy and exclusivity. Located close to M3M Golf Estate, Emaar Marbella, and M3M Urbana, Smartworld Sector 67A enjoys excellent connectivity and is expected to become one of Gurgaon&apos;s most sought-after luxury residential developments for both homebuyers and investors.
+                  </p>
+                </div>
+                <button
+                  type="button"
+                  onClick={() => setIsExpanded(!isExpanded)}
+                  className="text-[#0d6efd] font-semibold text-[14.5px] mt-2 hover:underline inline-flex items-center gap-1 cursor-pointer transition-colors duration-200 focus:outline-none"
+                >
+                  {isExpanded ? 'Read Less' : 'Read More'}
+                  <svg 
+                    className={`w-4 h-4 transition-transform duration-300 ${isExpanded ? 'rotate-180' : ''}`} 
+                    fill="none" 
+                    stroke="currentColor" 
+                    viewBox="0 0 24 24"
+                  >
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2.2} d="M19 9l-7 7-7-7" />
+                  </svg>
+                </button>
+              </div>
               
               <div className="grid grid-cols-2 gap-4 sm:gap-6 mt-6 mb-8">
                 {/* Feature 1 */}

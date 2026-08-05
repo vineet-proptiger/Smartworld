@@ -2,11 +2,11 @@
 import React from 'react'
 
 const amenities = [
-  {
-    title: 'Clubhouse',
-    description: '75,000 sq.ft. grand club',
-    icon: 'fa-solid fa-house'
-  },
+  // {
+  //   title: 'Clubhouse',
+  //   description: '75,000 sq.ft. grand club',
+  //   icon: 'fa-solid fa-house'
+  // },
   {
     title: 'Swimming Pool',
     description: 'All-weather infinity pool',
@@ -27,11 +27,11 @@ const amenities = [
     description: 'Synthetic rubber track',
     icon: 'fa-solid fa-person-running'
   },
-  {
-    title: 'Landscaped Garden',
-    description: 'Zen garden & water bodies',
-    icon: 'fa-solid fa-tree'
-  },
+  // {
+  //   title: 'Landscaped Garden',
+  //   description: 'Zen garden & water bodies',
+  //   icon: 'fa-solid fa-tree'
+  // },
   {
     title: 'Indoor Games',
     description: 'Snooker, Billiards & TT',
@@ -47,16 +47,16 @@ const amenities = [
     description: 'Peaceful & natural environment',
     icon: 'fa-solid fa-spa'
   },
-  {
-    title: 'CCTV Security',
-    description: '5-Tier AI security system',
-    icon: 'fa-solid fa-shield-halved'
-  },
-  {
-    title: 'Power Backup',
-    description: '100% uninterrupted power supply',
-    icon: 'fa-solid fa-bolt'
-  },
+  // {
+  //   title: 'CCTV Security',
+  //   description: '5-Tier AI security system',
+  //   icon: 'fa-solid fa-shield-halved'
+  // },
+  // {
+  //   title: 'Power Backup',
+  //   description: '100% uninterrupted power supply',
+  //   icon: 'fa-solid fa-bolt'
+  // },
   {
     title: 'EV Charging',
     description: 'Available at every parking bay',
@@ -75,12 +75,12 @@ const Amenities = () => {
             WORLD CLASS AMENITIES
           </span>
           <h2 className="text-[#163B72] text-[26px] sm:text-[32px] md:text-[38px] font-bold m-0">
-            Experience Luxury Lifestyle
+            A Lifestyle Beyond Ordinary
           </h2>
         </div>
 
         {/* 4x3 Grid of Amenity Cards */}
-        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 md:gap-7">
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-2 sm:gap-6 md:gap-7">
           {amenities.map((item, index) => (
             <div
               key={index}

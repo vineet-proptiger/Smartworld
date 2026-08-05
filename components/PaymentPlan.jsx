@@ -38,7 +38,7 @@ const PaymentPlan = ({ setIsOpen }) => {
             PAYMENT PLAN
           </span>
           <h2 className="text-[#163B72] text-[26px] sm:text-[32px] md:text-[38px] font-extrabold m-0 leading-tight">
-            Three Effortless Ways
+            Flexible Payment Plan
           </h2>
         </div>
 

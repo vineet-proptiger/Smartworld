@@ -124,7 +124,7 @@ const LeadForm = ({ formName = 'Hero Form', btnText = 'Submit Now' }) => {
             fontFamily: 'var(--font-poppins), Poppins, sans-serif',
           }}
         >
-          I give my consent for the{' '}
+          I agree to receive updates as per the{' '}
           <a
             href="/privacy-policy"
             target="_blank"
@@ -132,7 +132,6 @@ const LeadForm = ({ formName = 'Hero Form', btnText = 'Submit Now' }) => {
           >
             privacy policy
           </a>{' '}
-          to apply to the processing of the data provided above. I give authority to Realtor Studio, the Authorised Channel Partner for Smart World for Crownmark Estates Private Limited, and its representatives, to contact me via phone, SMS, email, or WhatsApp regarding this enquiry and related offers. This agreement takes precedence over any DNC/NDNC registration.
         </label>
       </div>
     </form>

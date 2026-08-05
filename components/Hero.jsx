@@ -5,12 +5,8 @@ const Hero = ({ setIsOpen }) => {
   return (
     <section
       id="home"
-      className="hero-section relative min-h-screen flex items-center overflow-hidden"
+      className="hero-section relative min-h-screen flex items-center overflow-hidden bg-[url('/images/hero/smDevice.webp')] md:bg-[url('/images/hero/banner1.webp')] bg-cover bg-center bg-no-repeat"
       style={{
-        backgroundImage: 'url(/images/hero/banner1.webp)',
-        backgroundRepeat: 'no-repeat',
-        backgroundPosition: 'center center',
-        backgroundSize: 'cover',
         padding: '160px 0 100px',
         fontFamily: 'var(--font-poppins), Poppins, sans-serif',
         color: '#1b2b4b',
@@ -37,7 +33,6 @@ const Hero = ({ setIsOpen }) => {
               <i className="fas fa-shield-alt text-[#0d6efd] text-base" />
               <span className="text-white font-normal">
                 Authorized Channel Partner for smartworld{' '}
-                <strong className="text-white/70 font-medium tracking-wide">CROWNMARK ESTATES PRIVATE LIMITED</strong>
               </span>
             </div>
 
@@ -62,8 +57,7 @@ const Hero = ({ setIsOpen }) => {
                 lineHeight: 1.22,
               }}
             >
-              Now Launching Premium Wellness <br className="hidden sm:inline" />
-              Residences in Sector 67A
+              Smartworld Sector 67 New Launch
             </h1>
 
             {/* Subtitle */}

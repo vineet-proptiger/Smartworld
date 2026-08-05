@@ -30,7 +30,7 @@ const Pricing = ({ setIsOpen }) => {
             PRICE LIST
           </span>
           <h2 className="text-[#163B72] text-[26px] sm:text-[32px] md:text-[38px] font-extrabold m-0 leading-tight md:whitespace-nowrap">
-            Splendid Investment Opportunities
+            Configurations & Pricing
           </h2>
         </div>
 

@@ -24,7 +24,7 @@ const Gallery = () => {
             PROJECT GALLERY
           </span>
           <h2 className="text-[#163B72] font-extrabold text-[26px] sm:text-[32px] md:text-[38px] tracking-tight">
-            A closer look
+            Project Gallery
           </h2>
         </div>
 

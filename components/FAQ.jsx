@@ -3,29 +3,38 @@ import React, { useState } from 'react'
 
 const faqData = [
   {
-    question: 'Where is Smartworld Sector 67 located?',
-    answer:
-      'Smartworld Sector 67 is on Golf Course Extension Road, Sector 67, Gurugram, Haryana — moments from SPR and Sohna Road, and about 25–30 minutes from Cyber City and IGI Airport.',
+    question: 'What configurations are available at Smartworld Sector 67A?',
+    answer: (
+      <>
+        Smartworld Sector 67A offers spacious <strong className="font-semibold text-[#1b2b4b]">3 BHK and 4 BHK luxury apartments</strong> with modern layouts, premium interiors, and large balconies. The residences are thoughtfully designed to maximize natural light, ventilation, and comfortable living for modern families.
+      </>
+    ),
   },
   {
-    question: 'What configurations & sizes are available?',
-    answer:
-      'The project offers 2.5 BHK residences (1,350 sq.ft.) and 3.5 BHK residences (1,750 sq.ft.) — only 366 exclusive homes across 3 G+30 towers.',
+    question: 'Is Smartworld Sector 67A RERA registered?',
+    answer: (
+      <>
+        Yes, <strong className="font-semibold text-[#1b2b4b]">Smartworld Sector 67A</strong> is a RERA-registered project. Buyers are advised to verify the latest RERA registration number and project details on the official Haryana RERA website or with the authorized sales team before making a purchase.
+      </>
+    ),
   },
   {
-    question: 'What is the price of Smartworld Sector 67?',
+    question: 'How tall is Smartworld Sector 67A and how many towers does it have?',
     answer:
-      'Pricing is on request. Register your interest to receive the latest pre-launch price, full cost sheet and payment plan.',
+      'Smartworld Sector 67A is a premium high-rise residential development featuring multiple elegantly designed towers. The project offers panoramic city views, modern architecture, and world-class amenities. For the latest tower count and floor details, please contact the official sales team.',
   },
   {
-    question: 'How many units & towers are there?',
-    answer:
-      'It is a limited-edition development of just 366 exclusive residences across 3 iconic G+30 towers on a 5-acre estate.',
+    question: 'Where exactly is Smartworld Sector 67A located?',
+    answer: (
+      <>
+        Smartworld Sector 67A is strategically located on <strong className="font-semibold text-[#1b2b4b]">Golf Course Extension Road, Gurugram</strong>, offering excellent connectivity to <strong className="font-semibold text-[#1b2b4b]">Sohna Road, NH-48, Southern Peripheral Road (SPR), Cyber City, Udyog Vihar, and Indira Gandhi International Airport</strong>. The location is surrounded by top schools, hospitals, shopping malls, and business hubs.
+      </>
+    ),
   },
   {
-    question: 'Is Smartworld Sector 67 RERA registered?',
+    question: 'Is Smartworld Sector 67A a good investment?',
     answer:
-      'The RERA registration is being updated. Please contact us for the latest RERA number and always verify the registration before booking.',
+      "Yes, Smartworld Sector 67A is considered a promising investment due to its prime location on Golf Course Extension Road, excellent connectivity, premium amenities, and strong infrastructure growth in the surrounding area. The project's strategic location and the increasing demand for luxury residences in Gurugram make it an attractive option for both end-users and investors.",
   },
 ]
 
