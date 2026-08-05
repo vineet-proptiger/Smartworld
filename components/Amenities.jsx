@@ -74,7 +74,7 @@ const Amenities = () => {
           <span className="text-[#3b82f6] font-bold text-[14px] tracking-[2px] uppercase mb-3 block">
             WORLD CLASS AMENITIES
           </span>
-          <h2 className="text-[#1b2b4b] text-[26px] sm:text-[32px] md:text-[38px] font-bold m-0">
+          <h2 className="text-[#163B72] text-[26px] sm:text-[32px] md:text-[38px] font-bold m-0">
             Experience Luxury Lifestyle
           </h2>
         </div>

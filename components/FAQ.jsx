@@ -46,7 +46,7 @@ const FAQ = () => {
           <span className="text-[#0d6efd] font-bold text-[13px] sm:text-[14px] tracking-[2.5px] uppercase mb-3 block">
             FAQ
           </span>
-          <h2 className="text-[#1b2b4b] text-[26px] sm:text-[32px] md:text-[38px] font-extrabold m-0 leading-tight">
+          <h2 className="text-[#163B72] text-[26px] sm:text-[32px] md:text-[38px] font-extrabold m-0 leading-tight">
             Frequently Asked Questions
           </h2>
         </div>

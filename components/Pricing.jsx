@@ -29,7 +29,7 @@ const Pricing = ({ setIsOpen }) => {
           <span className="text-[#0d6efd] font-bold text-[13px] sm:text-[14px] tracking-[2px] uppercase mb-2.5 block">
             PRICE LIST
           </span>
-          <h2 className="text-[#1b2b4b] text-[26px] sm:text-[32px] md:text-[38px] font-extrabold m-0 leading-tight">
+          <h2 className="text-[#163B72] text-[26px] sm:text-[32px] md:text-[38px] font-extrabold m-0 leading-tight">
             Splendid Investment Opportunities
           </h2>
         </div>
@@ -66,12 +66,21 @@ const Pricing = ({ setIsOpen }) => {
                 </div>
               </div>
 
-              {/* Action Button */}
               <button
                 onClick={() => setIsOpen(true)}
-                className="w-full py-3.5 rounded-[50px] text-white font-bold text-[15px] transition-all duration-300 shadow-[0_6px_20px_rgba(0,112,255,0.35)] active:scale-[0.98] border-none cursor-pointer"
+                className="w-full py-3.5 rounded-[50px] font-bold text-[15px] transition-all duration-300 shadow-[0_6px_20px_rgba(0,112,255,0.35)] active:scale-[0.98] cursor-pointer"
                 style={{
-                  background: 'linear-gradient(135deg, #0070ff 0%, #0050d5 100%)',
+                  background: '#0070ff',
+                  color: '#ffffff',
+                  border: '2px solid #0070ff',
+                }}
+                onMouseEnter={e => {
+                  e.currentTarget.style.background = '#ffffff';
+                  e.currentTarget.style.color = '#0070ff';
+                }}
+                onMouseLeave={e => {
+                  e.currentTarget.style.background = '#0070ff';
+                  e.currentTarget.style.color = '#ffffff';
                 }}
               >
                 Get Price List
@@ -100,17 +109,21 @@ const Pricing = ({ setIsOpen }) => {
                   <td className="py-6 px-6">
                     <button 
                       onClick={() => setIsOpen(true)}
-                      className="inline-flex items-center justify-center px-8 py-3 rounded-[50px] text-white font-bold text-[14px] transition-all duration-300 shadow-[0_4px_16px_rgba(0,112,255,0.35)] cursor-pointer border-none"
+                      className="inline-flex items-center justify-center px-8 py-3 rounded-[50px] font-bold text-[14px] transition-all duration-300 shadow-[0_4px_16px_rgba(0,112,255,0.35)] cursor-pointer"
                       style={{
                         background: '#0070ff',
+                        color: '#ffffff',
+                        border: '2px solid #0070ff',
                       }}
                       onMouseEnter={e => {
-                        e.currentTarget.style.background = '#0050d5';
+                        e.currentTarget.style.background = '#ffffff';
+                        e.currentTarget.style.color = '#0070ff';
                         e.currentTarget.style.transform = 'translateY(-2px)';
                         e.currentTarget.style.boxShadow = '0 8px 24px rgba(0,112,255,0.45)';
                       }}
                       onMouseLeave={e => {
                         e.currentTarget.style.background = '#0070ff';
+                        e.currentTarget.style.color = '#ffffff';
                         e.currentTarget.style.transform = 'none';
                         e.currentTarget.style.boxShadow = '0 4px 16px rgba(0,112,255,0.35)';
                       }}

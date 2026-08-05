@@ -5,6 +5,6 @@ export default function robots() {
       allow: '/',
       disallow: ['/api/'],
     },
-    sitemap: 'https://eldecoterraandsol.in/sitemap.xml',
+    sitemap: 'http://smartworldsector67a.com/sitemap.xml',
   }
 }

@@ -40,8 +40,23 @@ const nephilm = localFont({
 })
 
 export const metadata = {
-  title: 'Smart World Sector 67 | Premium Wellness Residences in Gurugram',
+  metadataBase: new URL('http://smartworldsector67a.com'),
+  title: 'Smart World Sector 67 | Wellness Residences Gurugram',
   description: 'Smart World Sector 67A — Premium Wellness Residences. RERA Registered. Starting ₹2.40 Cr*. Authorized Channel Partner: Crownmark Estates Private Limited.',
+  alternates: {
+    canonical: '/',
+  },
+  openGraph: {
+    title: 'Smart World Sector 67 | Wellness Residences Gurugram',
+    description: 'Smart World Sector 67A — Premium Wellness Residences. RERA Registered. Starting ₹2.40 Cr*. Authorized Channel Partner: Crownmark Estates Private Limited.',
+    url: 'http://smartworldsector67a.com',
+    siteName: 'Smart World Sector 67',
+    type: 'website',
+  },
+  icons: {
+    icon: '/favicon/favicon.png',
+    shortcut: '/favicon/favicon.ico',
+  },
 }
 
 export default function RootLayout({ children }) {

@@ -36,7 +36,7 @@ const EnquireModal = ({ isOpen, setIsOpen }) => {
       autoTriggered.current = true
       setIsOpen(true)
       intervalRef.current = setInterval(() => setIsOpen(true), 30000)
-    }, 30000)
+    }, 15000)
     return () => {
       clearTimeout(initial)
       if (intervalRef.current) clearInterval(intervalRef.current)
@@ -58,7 +58,8 @@ const EnquireModal = ({ isOpen, setIsOpen }) => {
   /* ── Submit — identical API call as LeadForm ── */
   const submit = async (e) => {
     e.preventDefault()
-    if (!/^\d{10}$/.test(form.phone)) { setError('Please enter a valid 10-digit mobile number.'); return }
+    if (form.phone.length !== 10) { setError('Please enter a valid 10-digit mobile number.'); return }
+    if (!/^[6-9]\d{9}$/.test(form.phone)) { setError('Phone number must start with 6, 7, 8, or 9'); return }
     setError(''); setLoading(true)
     const tracking = buildTrackingFields()
     const payload = new FormData()
@@ -234,7 +235,7 @@ const EnquireModal = ({ isOpen, setIsOpen }) => {
               <button
                 type="submit" disabled={loading}
                 style={{
-                  background: '#0070ff', color: '#fff', border: 'none',
+                  background: '#0070ff', color: '#fff', border: '2px solid #0070ff',
                   padding: '14px 48px', fontFamily: 'var(--font-poppins), Poppins, sans-serif', fontWeight: '700',
                   fontSize: '15px', letterSpacing: '0.05em', cursor: loading ? 'not-allowed' : 'pointer',
                   textTransform: 'uppercase', borderRadius: '8px',
@@ -242,8 +243,8 @@ const EnquireModal = ({ isOpen, setIsOpen }) => {
                   transition: 'all 0.3s ease',
                   boxShadow: '0 4px 15px rgba(0, 112, 255, 0.35)',
                 }}
-                onMouseEnter={e => { if (!loading) e.currentTarget.style.background = '#0050d5' }}
-                onMouseLeave={e => { if (!loading) e.currentTarget.style.background = '#0070ff' }}
+                onMouseEnter={e => { if (!loading) { e.currentTarget.style.background = '#ffffff'; e.currentTarget.style.color = '#0070ff' } }}
+                onMouseLeave={e => { if (!loading) { e.currentTarget.style.background = '#0070ff'; e.currentTarget.style.color = '#fff' } }}
               >
                 {loading ? 'SENDING...' : 'SUBMIT'}
               </button>

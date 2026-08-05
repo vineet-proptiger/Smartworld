@@ -77,18 +77,21 @@ const Navbar = ({ setIsOpen }) => {
           <div className="hidden lg:flex items-center shrink-0 ml-4">
             <button
               onClick={() => setIsOpen(true)}
-              className="inline-flex items-center justify-center px-6 py-2.5 rounded-[50px] text-white font-semibold text-[15px] transition-all duration-300 whitespace-nowrap"
+              className="inline-flex items-center justify-center px-6 py-2.5 rounded-[50px] font-semibold text-[15px] transition-all duration-300 whitespace-nowrap"
               style={{
                 background: '#1a6dff',
+                color: '#ffffff',
+                border: '2px solid #1a6dff',
                 boxShadow: '0 4px 14px 0 rgba(26, 109, 255, 0.39)',
-                border: 'none',
               }}
               onMouseEnter={e => {
-                e.currentTarget.style.background = '#0050d5';
+                e.currentTarget.style.background = '#ffffff';
+                e.currentTarget.style.color = '#1a6dff';
                 e.currentTarget.style.transform = 'translateY(-1px)';
               }}
               onMouseLeave={e => {
                 e.currentTarget.style.background = '#1a6dff';
+                e.currentTarget.style.color = '#ffffff';
                 e.currentTarget.style.transform = 'none';
               }}
             >
@@ -139,8 +142,16 @@ const Navbar = ({ setIsOpen }) => {
           <div style={{ padding: '16px 24px' }}>
             <button
               onClick={() => { setIsOpen(true); setMobileOpen(false) }}
-              className="w-full text-white py-3.5 px-4 rounded-[50px] font-semibold text-[15px] transition-colors"
-              style={{ background: '#1a6dff', border: 'none', boxShadow: '0 4px 14px 0 rgba(26, 109, 255, 0.39)' }}
+              className="w-full py-3.5 px-4 rounded-[50px] font-semibold text-[15px] transition-all duration-300"
+              style={{ background: '#1a6dff', color: '#ffffff', border: '2px solid #1a6dff', boxShadow: '0 4px 14px 0 rgba(26, 109, 255, 0.39)' }}
+              onMouseEnter={e => {
+                e.currentTarget.style.background = '#ffffff';
+                e.currentTarget.style.color = '#1a6dff';
+              }}
+              onMouseLeave={e => {
+                e.currentTarget.style.background = '#1a6dff';
+                e.currentTarget.style.color = '#ffffff';
+              }}
             >
               Book Site Visit
             </button>

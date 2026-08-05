@@ -1,4 +1,4 @@
-const BASE_URL = 'https://eldecoterraandsol.in'
+const BASE_URL = 'http://smartworldsector67a.com'
 
 export default function sitemap() {
   return [

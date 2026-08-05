@@ -31,7 +31,7 @@ const Overview = ({ setIsOpen }) => {
               <span className="text-[#0d6efd] font-bold text-[14px] tracking-widest uppercase mb-3 block">
                 Wellness Architecture
               </span>
-              <h2 className="text-[#1b2b4b] text-[25px] sm:text-[30px] md:text-[38px] font-extrabold leading-[1.2] mb-4">
+              <h2 className="text-[#163B72] text-[25px] sm:text-[30px] md:text-[38px] font-extrabold leading-[1.2] mb-4">
                 Designed by architects. Built for wellness.
               </h2>
               <p className="text-[#6c757d] text-[15px] leading-[1.7] mb-8 pr-0 lg:pr-10">
@@ -83,18 +83,21 @@ const Overview = ({ setIsOpen }) => {
 
               <button 
                 onClick={() => setIsOpen(true)}
-                className="mt-2 inline-flex items-center justify-center px-8 py-3.5 rounded-[50px] text-white font-semibold text-[15px] transition-all duration-300"
+                className="mt-2 inline-flex items-center justify-center px-8 py-3.5 rounded-[50px] font-semibold text-[15px] transition-all duration-300"
                 style={{
                   background: '#1a56db',
-                  border: 'none',
+                  color: '#ffffff',
+                  border: '2px solid #1a56db',
                   boxShadow: '0 4px 14px 0 rgba(26, 86, 219, 0.39)'
                 }}
                 onMouseEnter={e => {
-                  e.currentTarget.style.background = '#1e40af';
+                  e.currentTarget.style.background = '#ffffff';
+                  e.currentTarget.style.color = '#1a56db';
                   e.currentTarget.style.transform = 'translateY(-2px)';
                 }}
                 onMouseLeave={e => {
                   e.currentTarget.style.background = '#1a56db';
+                  e.currentTarget.style.color = '#ffffff';
                   e.currentTarget.style.transform = 'none';
                 }}
               >

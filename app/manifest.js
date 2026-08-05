@@ -1,17 +1,17 @@
 export default function manifest() {
   return {
-    name: 'Eldeco Terra & Sol',
-    short_name: 'Eldeco Terra',
-    description: 'Luxury Apartments in Gurgaon',
+    name: 'Smart World Sector 67',
+    short_name: 'Smart World 67',
+    description: 'Premium Wellness Residences in Gurugram',
     start_url: '/',
     display: 'standalone',
     background_color: '#ffffff',
-    theme_color: '#1a1a1a',
+    theme_color: '#0070ff',
     icons: [
       {
-        src: '/favicon.ico',
+        src: '/favicon/favicon.png',
         sizes: 'any',
-        type: 'image/x-icon',
+        type: 'image/png',
       },
     ],
   }

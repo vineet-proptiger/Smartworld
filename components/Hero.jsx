@@ -130,10 +130,20 @@ const Hero = ({ setIsOpen }) => {
               <button
                 type="button"
                 onClick={() => setIsOpen && setIsOpen(true)}
-                className="w-full sm:w-auto inline-flex items-center justify-center px-8 sm:px-9 py-3.5 rounded-full text-white font-bold text-base transition-all duration-300 hover:scale-105 cursor-pointer border-none text-center"
+                className="w-full sm:w-auto inline-flex items-center justify-center px-8 sm:px-9 py-3.5 rounded-full font-bold text-base transition-all duration-300 hover:scale-105 cursor-pointer text-center"
                 style={{
                   background: '#0070ff',
+                  color: '#ffffff',
+                  border: '2px solid #0070ff',
                   boxShadow: '0 6px 20px rgba(0, 112, 255, 0.4)',
+                }}
+                onMouseEnter={e => {
+                  e.currentTarget.style.background = '#ffffff';
+                  e.currentTarget.style.color = '#0070ff';
+                }}
+                onMouseLeave={e => {
+                  e.currentTarget.style.background = '#0070ff';
+                  e.currentTarget.style.color = '#ffffff';
                 }}
               >
                 Book Site Visit
@@ -154,7 +164,7 @@ const Hero = ({ setIsOpen }) => {
           </div>
 
           {/* ── Right Form ── */}
-          <div className="w-full lg:w-[42%] xl:w-[38%] lg:pl-4 xl:pl-8">
+          <div className="hidden lg:block w-full lg:w-[42%] xl:w-[38%] lg:pl-4 xl:pl-8">
             <div
               className="lead-form rounded-[24px] p-8 lg:p-10"
               style={{
